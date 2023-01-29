@@ -1,0 +1,6 @@
+<h1>注目の映画</h1>
+  <div style="padding: 10px; margin-bottom: 10px; border: 1px dashed #333333;">
+    <%@elements.each do|element|%>
+      <p><%=link_to(element.inner_text,"https://movie.jorudan.co.jp/#{element[:href]}")%></p>
+    <%end%>
+  </div>
